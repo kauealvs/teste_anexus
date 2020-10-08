@@ -36,6 +36,11 @@
                         <p>{{$registro->name}}</p>
                     </div>
                 @endif
+                @if ($registro->id == 7 || $registro->id == 8 || $registro->id == 9 || $registro->id == 10)
+                    <div class="col-3 reg">
+                        <p>{{$registro->name}}</p>
+                    </div>
+                @endif
         @endforeach
     </div>
     </div>
