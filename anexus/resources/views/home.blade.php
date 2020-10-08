@@ -16,11 +16,13 @@
         <div style="display: none">
             {{$registro = $registros->find(1)}}
         </div>
-        <div class="col-12 reg">
-            <h1>{{$registro->name}}</h1>
-        </div>
         <div class="row">
-        @foreach($registros as $registro)
+            @foreach($registros as $registro)
+                @if ($registro->id == 1)
+                    <div class="col-12 reg">
+                        <h1>{{$registro->name}}</h1>
+                    </div>
+                @endif
                 @if ($registro->id == 2)
                     <div class="col-6 reg">
                         <p>{{$registro->name}}</p>
@@ -41,7 +43,7 @@
                         <p>{{$registro->name}}</p>
                     </div>
                 @endif
-        @endforeach
+            @endforeach
     </div>
     </div>
 @endsection
