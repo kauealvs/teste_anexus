@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title{
+    padding-top: 2%;
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    height: 5em;
+}
+
+.form{
+    margin-top: 3%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form span{
+    font-size: 2em;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+#name{
+    margin-right: 2%;
+}
+
+.reg{
+    margin-top: 2%;
+    text-align: center;
+}
+
+p{
+    font-size: 2em;
+}
